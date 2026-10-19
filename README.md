@@ -9,6 +9,8 @@ Selected model components for image deraining:
 This partial release does not include the complete network, training code,
 datasets, or pretrained weights.
 
+The complete codebase will be released upon acceptance of the manuscript.
+
 ## Installation
 
 Python 3.8 or newer is required. Install PyTorch for your platform, then run:
