@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prism-deraining-modules"
+version = "0.1.0"
+description = "Selected PRISM components for image deraining"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["torch>=1.10", "einops>=0.6.1"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+include = ["prism", "prism.*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
